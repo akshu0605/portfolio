@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from 'motion/react';
 import { Download, Mail, ArrowRight, Github, Linkedin, Twitter } from 'lucide-react';
 import { useRef } from 'react';
 import { Button } from './ui/button';
-import profileImage from 'figma:asset/f59ab0b02f91cb4852c5b4d51dfe0fb087b22bc5.png';
+
 
 export function Hero() {
   const containerRef = useRef(null);
@@ -166,12 +166,12 @@ export function Hero() {
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-3xl blur-2xl opacity-30" />
               <div className="relative glass-heavy rounded-3xl p-2 shadow-2xl">
                 <img
-                  src={profileImage}
+                  src="https://placehold.co/400x400"
                   alt="Akshit Jaswal"
                   className="w-full h-auto rounded-2xl object-cover aspect-square"
                 />
               </div>
-              
+
               {/* Floating elements */}
               <motion.div
                 animate={{
@@ -187,7 +187,7 @@ export function Hero() {
               >
                 <p className="text-sm">💻 AI & Web Dev</p>
               </motion.div>
-              
+
               <motion.div
                 animate={{
                   y: [0, 10, 0],
